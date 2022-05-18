@@ -1,0 +1,30 @@
+package com.mayank;
+
+import java.util.Scanner;
+
+public class reverse {
+    public static void main(String[] args) {
+
+        int num = 234;
+
+        Reverse(num);
+
+    }
+
+    public static void Reverse(int num) {
+
+
+        if (num < 10) {
+            System.out.println(num);
+            return;
+
+        } else {
+
+
+            System.out.print(num % 10);
+
+
+            Reverse(num / 10);
+        }
+    }
+}
